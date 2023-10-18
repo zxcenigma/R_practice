@@ -1,14 +1,5 @@
 > library(dplyr)  #Подключаем dplyr
 
-Присоединяю пакет: ‘dplyr’
-
-Следующие объекты скрыты от ‘package:stats’:
-
-    filter, lag
-
-Следующие объекты скрыты от ‘package:base’:
-
-    intersect, setdiff, setequal, union
 
 > starwars  #Открываем базу
 # A tibble: 87 × 14
