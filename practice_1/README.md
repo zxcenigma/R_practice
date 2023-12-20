@@ -452,3 +452,117 @@ What do you think tf will look like?
 2: a vector of 4 logical values
 
 Выбор:2
+
+Print the contents of tf now.
+
+```R
+tf
+[1]  TRUE FALSE  TRUE FALSE
+```
+
+Let's try another. Type num_vect >= 6 without assigning the result to a new variable.
+
+```R
+num_vect >= 6
+[1] FALSE  TRUE FALSE  TRUE
+```
+
+(3 > 5) & (4 == 4)
+1: FALSE
+2: TRUE
+
+Выбор:1
+
+(TRUE == TRUE) | (TRUE == FALSE)
+1: TRUE
+2: FALSE
+
+Выбор:1
+
+((111 >= 111) | !(TRUE)) & ((4 + 1) == 5)
+1: TRUE
+2: FALSE
+
+Выбор:1
+
+Create a character vector that contains the following words: "My", "name", "is". Remember to
+enclose each word in its own set of double quotes, so that R knows they are character strings.
+Store the vector in a variable called my_char.
+
+```R
+my_char <- c("My", "name", "is")
+```
+
+Print the contents of my_char to see what it looks like.
+
+```R
+my_char
+[1] "My"   "name" "is"
+```
+
+Type paste(my_char, collapse = " ") now. Make sure there's a space between the double quotes in
+the 'collapse' argument. You'll see why in a second.
+
+```R
+paste(my_char, collapse = " ")
+[1] "My name is"
+```
+
+To add (or 'concatenate') your name to the end of my_char, use the c() function like this:
+c(my_char, "your_name_here"). Place your name in double quotes where I've put "your_name_here".
+Try it now, storing the result in a new variable called my_name.
+
+```R
+ c(my_char, "zxcenigma")
+[1] "My"        "name"      "is"        "zxcenigma"
+```
+
+Tack your name on to the end of the my_char vector using the c() function.  Be sure to assign the
+result to a new variable called my_name. If your name was "Swirl", you would type my_name <-
+c(my_char, "Swirl").
+
+```R
+my_name <- c(my_char, "zxcenigma")
+```
+
+Take a look at the contents of my_name.
+
+```R
+my_name
+[1] "My"        "name"      "is"        "zxcenigma"
+```
+
+Now, use the paste() function once more to join the words in my_name together into a single
+| character string. Don't forget to say collapse = " "!
+
+```R
+paste(my_name, collapse = " ")
+[1] "My name is zxcenigma"
+```
+
+In the simplest case, we can join two character vectors that are each of length 1 (i.e. join two
+words). Try paste("Hello", "world!", sep = " "), where the 'sep' argument tells R that we want to
+separate the joined elements with a single space.
+
+```R
+paste("Hello", "world!", sep = " ")
+[1] "Hello world!"
+```
+
+For a slightly more complicated example, we can join two vectors, each of length 3. Use paste()
+to join the integer vector 1:3 with the character vector c("X", "Y", "Z"). This time, use sep =
+"" to leave no space between the joined elements.
+
+```R
+paste(c(1:3), c("X", "Y", "Z"), sep = "")
+[1] "1X" "2Y" "3Z"
+```
+
+Vector recycling! Try paste(LETTERS, 1:4, sep = "-"), where LETTERS is a predefined variable in R
+containing a character vector of all 26 letters in the English alphabet.
+
+```R
+paste(LETTERS, 1:4, sep = "-")
+ [1] "A-1" "B-2" "C-3" "D-4" "E-1" "F-2" "G-3" "H-4" "I-1" "J-2" "K-3" "L-4" "M-1" "N-2" "O-3" "P-4"
+[17] "Q-1" "R-2" "S-3" "T-4" "U-1" "V-2" "W-3" "X-4" "Y-1" "Z-2"
+```
