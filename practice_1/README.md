@@ -10,5 +10,7 @@ swirl()
 
  In its simplest form, R can be used as an interactive calculator. Type 5 + 7 and press Enter.
 
+```R
 > 5 + 7
 [1] 12
+```
