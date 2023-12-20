@@ -3,5 +3,6 @@
 
 ```
 install.packages("swirl")
+library("swirl")
+swirl()
 ```
-> library("swirl")
