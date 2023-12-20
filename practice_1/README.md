@@ -1,2 +1,2 @@
-# install.packages("swirl")
-# swirl()
+ install.packages("swirl")
+ swirl()
