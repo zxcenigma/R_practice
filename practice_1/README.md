@@ -55,7 +55,6 @@ Anytime you have questions about a particular function, you can access R’s bui
 
 Great job!
 
-  |====================================                                                      |  39%
 | Type z to view its contents. Notice that there are no commas separating the values in the output.
 
 ```R
@@ -65,7 +64,6 @@ z
 ```
 All that hard work is paying off!
 
-  |======================================                                                    |  42%
 | You can combine vectors to make a new vector. Create a new vector that contains z, 555, then z
 | again in that order. Don't assign this vector to a new variable, so that we can just see the
 | result immediately.
@@ -77,7 +75,6 @@ c(z, 555, z)
 
 | You are doing so well!
 
-  |========================================                                                  |  45%
 | Numeric vectors can be used in arithmetic expressions. Type the following to see what happens: z
 | * 2 + 100.
 
@@ -105,3 +102,62 @@ my_sqrt <- sqrt(z - 1)
  2: a single number (i.e a vector of length 1)	
  3: a vector of length 0 (i.e. an empty vector)   	                     
  Выбор:1	
+
+ Print the contents of my_sqrt.
+
+```R
+> my_sqrt
+[1] 0.3162278 2.8284271 1.4628739
+```
+
+Now, create a new variable called my_div that gets the value of z divided by my_sqrt.
+```R
+my_div <- z / my_sqrt
+```
+
+ Think about how R handled the other 'vectorized' operations like `+` and `*`.
+
+ ```R
+Выбор:2
+```
+
+Go ahead and print the contents of my_div.
+
+```R
+my_div
+[1] 3.478505 3.181981 2.146460
+```
+To see another example of how this vector 'recycling' works, try adding c(1, 2, 3, 4) and c(0, 10). Don't worry about
+saving the result in a new variable.
+
+```R
+c(1, 2, 3, 4) + c(0, 10)
+[1]  1 12  3 14
+```
+
+Try c(1, 2, 3, 4) + c(0, 10, 100) for an example.
+
+```R
+c(1, 2, 3, 4) + c(0, 10, 100)
+[1]   1  12 103   4
+```
+
+ In many programming environments, the up arrow will cycle through previous commands. Try hitting the up arrow on your 
+ keyboard until you get to this command (z * 2 + 100), then change 100 to 1000 and hit Enter. If the up arrow doesn't work
+ for you, just type the corrected command.
+
+```R
+z * 2 + 1000
+[1] 1002.20 1018.00 1006.28
+```
+
+  You can type the first two letters of the variable name, then hit the Tab key (possibly more than 
+once). Most programming environments will provide a list of variables that you've created that 
+begin with 'my'. This is called auto-completion and can be quite handy when you have many 
+variables in your workspace. Give it a try. (If auto-completion doesn't work for you, just type 
+my_div and press Enter.)
+
+```R
+my_div
+[1] 3.478505 3.181981 2.146460
+```
