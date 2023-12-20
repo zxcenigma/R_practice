@@ -6,3 +6,4 @@ install.packages("swirl")
 library("swirl")
 swirl()
 ```
+![image](https://github.com/zxcenigma/R_practice/assets/90748931/692ed0bb-866d-46e6-b3e0-1f76b5ab256b)
