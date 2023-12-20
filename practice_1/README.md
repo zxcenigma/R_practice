@@ -97,6 +97,5 @@ Before we view the contents of the my_sqrt variable, what do you think it contai
 1: a vector of length 0 (i.e. an empty vector)   
 2: a single number (i.e a vector of length 1)   
 3: a vector of length 3   
-                    Выбор:2
-        Think about how R handled the other 'vectorized' operations: element-by-element.
-        Выбор:1
+                    Выбор:2                                                                                              Think about how R handled the other 'vectorized' operations: element-by-element.                                                                    
+Выбор:1
