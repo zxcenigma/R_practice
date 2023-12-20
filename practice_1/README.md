@@ -92,16 +92,16 @@ Take the square root of z - 1 and assign it to a new variable called my_sqrt.
 my_sqrt <- sqrt(z - 1)
 ```
 
-Before we view the contents of the my_sqrt variable, what do you think it contains?
+##Before we view the contents of the my_sqrt variable, what do you think it contains?
 #
-1: a vector of length 0 (i.e. an empty vector)   
-2: a single number (i.e a vector of length 1)   
-3: a vector of length 3   
-                    Выбор:2 																																																								   
+#1: a vector of length 0 (i.e. an empty vector)   
+#2: a single number (i.e a vector of length 1)   
+#3: a vector of length 3   
+##Выбор:3
 										
-Think about how R handled the other 'vectorized' operations: element-by-element.  
+##Think about how R handled the other 'vectorized' operations: element-by-element.  
 #
-1: a vector of length 3
-2: a single number (i.e a vector of length 1)
-3: a vector of length 0 (i.e. an empty vector)                        
-			Выбор:1
+#1: a vector of length 3
+#2: a single number (i.e a vector of length 1)
+#3: a vector of length 0 (i.e. an empty vector)                        
+##Выбор:1
