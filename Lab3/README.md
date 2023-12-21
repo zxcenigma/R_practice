@@ -48,7 +48,7 @@ library("nycflights13")
 ```R
 nycflights13::airlines
 ```
-```R
+```{r}
 # A tibble: 16 × 2
    carrier name                       
    <chr>   <chr>                      
