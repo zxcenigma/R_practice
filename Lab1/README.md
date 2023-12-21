@@ -19,8 +19,6 @@ RStudio.
 
 Установка swirl
 
-## Код
-
 ```R
 install.packages("swirl")
 library("swirl")
