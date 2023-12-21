@@ -195,7 +195,10 @@ starwars %>% group_by(species) %>% summarise(avg_lenth = mean(nchar(name)))
 # ℹ 28 more rows
 # ℹ Use `print(n = ...)` to see more rows
 ```
+## Оценка результатов
+
+Был изучен пакет dplyr
 
 ## Вывод
 
-Я научился использовать простейшие команды R и использовать библиотеку dplyr
+Ознакомлен с базовыми командами R
