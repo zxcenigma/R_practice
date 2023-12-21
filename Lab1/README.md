@@ -15,6 +15,10 @@
 
 RStudio.
 
+## Ход работы
+
+Установка swirl
+
 ```R
 install.packages("swirl")
 library("swirl")
