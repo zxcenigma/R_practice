@@ -44,7 +44,7 @@ library("nycflights13")
 пакет ‘nycflights13’ был собран под R версии 4.3.2 
 ```
 
-1.Сколько встроенных в пакет nycflights13 датафреймов?
+# 1.Сколько встроенных в пакет nycflights13 датафреймов?
 ```R
 nycflights13::airlines
 ```
