@@ -382,6 +382,13 @@ flights %>%
   arrange(desc(flights_count)) %>%
   head(1)
 ```
+
+```R
+# A tibble: 1 × 2
+  carrier flights_count
+  <chr>           <int>
+1 UA               4975
+```
 12. . Самолеты какой авиакомпании задерживались чаще других в 2013 году?
 
 ```R
