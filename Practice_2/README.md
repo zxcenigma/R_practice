@@ -9,7 +9,17 @@
 ## Ход работы
 Подключаем dplyr
 ```R
-library(dplyr)  
+library(dplyr)
+
+Присоединяю пакет: ‘dplyr’
+
+Следующие объекты скрыты от ‘package:stats’:
+
+    filter, lag
+
+Следующие объекты скрыты от ‘package:base’:
+
+    intersect, setdiff, setequal, union  
 ```
 Открываем базу
 ```R
