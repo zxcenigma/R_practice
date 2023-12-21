@@ -156,22 +156,32 @@ nycflights13::weather
 
 ```R
 airlines  %>% nrow()
+```
+```R
 [1] 16
 ```
 ```R
 airports  %>% nrow()
+```
+```R
 [1] 1458
 ```
 ```R
 flights  %>% nrow()
+```
+```R
 [1] 336776
 ```
 ```R
 planes  %>% nrow()
+```
+```R
 [1] 3322
 ```
 ```R
 weather  %>% nrow()
+```
+```R
 [1] 26115
 ```
 
@@ -179,29 +189,40 @@ weather  %>% nrow()
 
 ```R
 airlines  %>% ncol()
+```
+```R
 [1] 2
 ```
 ```R
 airports  %>% ncol()
+```
+```R
 [1] 8
 ```
 ```R
 flights  %>% ncol()
+```
+```R
 [1] 19
 ```
 ```R
 planes  %>% ncol()
+```
+```R
 [1] 9
 ```
 ```R
 weather  %>% ncol()
+```
+```R
 [1] 15
 ```
 
 4.Как просмотреть примерный вид датафрейма?
 ```R
 airlines  %>% glimpse()
-
+```
+```R
 Rows: 16
 Columns: 2
 $ carrier <chr> "9E", "AA", "AS", "B6", "DL", "EV", "F9", "FL", "HA", "MQ", "O…
@@ -209,7 +230,8 @@ $ name    <chr> "Endeavor Air Inc.", "American Airlines Inc.", "Alaska Airline�
 ```
 ```R
 airports  %>% glimpse()
-
+```
+```R
 Rows: 1,458
 Columns: 8
 $ faa   <chr> "04G", "06A", "06C", "06N", "09J", "0A9", "0G6", "0G7", "0P2", "…
@@ -223,7 +245,8 @@ $ tzone <chr> "America/New_York", "America/Chicago", "America/Chicago", "Ameri�
 ```
 ```R
 flights  %>% glimpse()
-
+```
+```R
 Rows: 336,776
 Columns: 19
 $ year           <int> 2013, 2013, 2013, 2013, 2013, 2013, 2013, 2013, 2013, 2…
@@ -248,7 +271,8 @@ $ time_hour      <dttm> 2013-01-01 05:00:00, 2013-01-01 05:00:00, 2013-01-01 0�
 ```
 ```R
 planes  %>% glimpse()
-
+```
+```R
 Rows: 3,322
 Columns: 9
 $ tailnum      <chr> "N10156", "N102UW", "N103US", "N104UW", "N10575", "N105UW…
@@ -263,7 +287,8 @@ $ engine       <chr> "Turbo-fan", "Turbo-fan", "Turbo-fan", "Turbo-fan", "Turb�
 ```
 ```R
 weather %>% glimpse()
-
+```
+```R
 Rows: 26,115
 Columns: 15
 $ origin     <chr> "EWR", "EWR", "EWR", "EWR", "EWR", "EWR", "EWR", "EWR", "EW…
@@ -287,7 +312,8 @@ $ time_hour  <dttm> 2013-01-01 01:00:00, 2013-01-01 02:00:00, 2013-01-01 03:00�
 
 ```R
 flights %>%  group_by(carrier)  %>%  summarise() %>% nrow()
-
+```
+```R
 [1] 16
 ```
 
@@ -295,7 +321,8 @@ flights %>%  group_by(carrier)  %>%  summarise() %>% nrow()
 
 ```R
 flights %>% filter(month == 5 & origin == 'JFK')  %>% nrow()
-
+```
+```R
 [1] 9397
 ```
 
@@ -303,7 +330,8 @@ flights %>% filter(month == 5 & origin == 'JFK')  %>% nrow()
 
 ```R
 airports %>% filter(lat == max(lat))
-
+```
+```R
 # A tibble: 1 × 8
   faa   name                      lat   lon   alt    tz dst   tzone
   <chr> <chr>                   <dbl> <dbl> <dbl> <dbl> <chr> <chr>
